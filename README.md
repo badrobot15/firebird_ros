@@ -29,7 +29,7 @@ The firebird robot has 16 ADC channels that consist of 3 white line sensors, 5 s
 In order to print something on the LCD of the firebird robot, you can use the lcd.msg message. The row and col sets the cursor location and the val contains the data you intend to print
 
 ## Topics
-The firebird robot subscribes to 9 topics and publishes 1 topic. These topics are all under the namespace **/firebird**
+The firebird robot subscribes to 9 topics and publishes 1 topic. These topics are all under the namespace **/firebird**. You should use *rostopic info /topic* to see the msg type of the topic
 
 ### /sensors
 The **/firebird/sensors** topic publishes the sensor data from the robot using the sensor.msg. The data published is a raw 8-bit data from the Analog to Digital conversion.
